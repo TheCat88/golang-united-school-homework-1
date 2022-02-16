@@ -1,9 +1,14 @@
 package main
 
 import (
-	"github.com/kyokomi/emoji/v2"
+	"fmt"
+	"strings"
+
+	"github.com/kyokomi/emoji"
 )
 
 func main() {
-	emoji.Println("Hello :world_map:!")
+	var a = emoji.Sprintf(":world_map:!")
+	strings.ReplaceAll(a, " ", "")
+	fmt.Printf(emoji.Sprintf("Hello " + strings.ReplaceAll(a, " ", "")))
 }
