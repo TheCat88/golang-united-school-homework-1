@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"github.com/kyokomi/emoji/v2"
 )
 
 func main() {
-	fmt.Println("Hello 🗺️!")
+	emoji.Println("Hello :world_map:!")
 }
