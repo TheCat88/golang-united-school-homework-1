@@ -1,4 +1,4 @@
-package main
+package solution
 
 import (
 	"fmt"
@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	var a = emoji.Sprintf(":world_map:!")
-	fmt.Printf(emoji.Sprintf("Hello " + strings.ReplaceAll(a, " ", "")))
+
+	fmt.Printf(GetMessage())
 }
 
 func GetMessage() string {
